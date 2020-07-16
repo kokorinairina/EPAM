@@ -1,0 +1,76 @@
+.hidden{
+  display: none;
+}
+
+
+
+body {
+  background-color: antiquewhite;  
+   
+  }
+  .mypanel{
+    
+    margin: auto;
+    border-radius: 5px;
+    box-shadow:  6px 15px 12px rgb(46, 46, 46);
+    width: 78%;
+    height: 70%;
+    background-color: mintcream;
+    
+  }
+  .navbar-inverse{
+    margin: auto;
+     
+    border-radius: 4px;
+    width: 85%;
+    height: 25%;
+    background-color: darkblue;
+    
+  }
+  .navbar-text{
+    font-size: 25px;
+    color: darkblue;
+  }
+  .label-warning{
+    color: black;
+    font-size: 15px;
+    background-color: indigo;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 2px;
+    size: 100px;
+  }
+  .timer{
+    color: maroon;
+    font-size: 25px;
+    margin-left: 40%;
+  }
+  
+  .police{
+   
+    font-size: 15px;
+    list-style: none;
+    color: blue;
+        
+  }
+
+  .police .police{
+    font-size: 25px;
+  }
+  
+
+  .thief{
+    font-size: 15px;
+    list-style: none;
+    color: red;
+  }
+  .thief .thief {
+    font-size: 20px;
+  }
+   
+  .col_police{
+ 
+  }
+  .col_grab{
+   
+  }
