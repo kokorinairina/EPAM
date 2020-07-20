@@ -1,101 +1,10 @@
-.hidden{
-  display: none;
+.game-timer-warn {
+  color: #FFA600;
+}
+.game-timer-cri {
+  color: red;
 }
 
-
-
-body {
-  background-color: antiquewhite;  
-   
-  }
-  .mypanel{
-    
-    margin: auto;
-    border-radius: 5px;
-    box-shadow:  6px 15px 12px rgb(46, 46, 46);
-    width: 78%;
-    height: 70%;
-    background-color: mintcream;
-    
-  }
-  .navbar-inverse{
-    margin: auto;
-     
-    border-radius: 4px;
-    width: 85%;
-    height: 25%;
-    background-color: darkblue;
-    
-  }
-  .navbar-text{
-    font-size: 25px;
-    color: darkblue;
-  }
-  .label-warning{
-    color: black;
-    font-size: 15px;
-    background-color: indigo;
-    border-radius: 4px;
-    margin: 2px;
-    padding: 2px;
-    size: 100px;
-  }
-  .game-timer-ok{
-    color: maroon;
-    font-size: 25px;
-    margin-left: 45%;
-  }
-  
-  #team1, #team2 {
-    width: 200px;
-    background-color: aliceblue;
-    border-radius: 5px;
-    font-size: smaller;
-    border: 1px solid;
-    padding: 2px;
-  }
-  #team1 {
-    float: left;
-  }
-  #team2 {
-    float: right;
-  }
-  #team1.police,
-  #team2.police {
-    border-color: #0099ff;
-  }
-  #team1.thief,
-  #team2.thief {
-    border-color: #FFCC00;
-  }
-
-  .game-team-police-caption,
-.game-team-thief-caption {
-  color: black;
-}
-.game-team-police-caption {
-  background-color: #0099ff;
-}
-.game-team-thief-caption {
-  background-color: #FFCC00;
-}
-#team1Lives, #team2Lives {
-  float: right;
-  color: black;
-  border: 1px solid;
-  border-radius: 2px;
-  background-color: red;
-}
-.teamLives, .teamCoins {
-  padding: 3px;
-}
-#team1Coins, #team2Coins {
-  float: right;
-  color: black;
-  border: 1px solid;
-  border-radius: 2px;
-  background-color: #FFA600;
-}
 .game-player {
   color: black;
   padding: 3px;
@@ -106,7 +15,6 @@ body {
 .game-player:nth-child(odd) {
   background: #5F5F5F;
 }
-
 .game-player-lives,
 .game-player-coins,
 .game-player-deaths {
@@ -121,43 +29,16 @@ body {
   color: black;
   background-color: #FFA600;
 }
-
-.game-btn {
-  border: solid 2px;
-  padding: 5px;
-  background-color: inherit;
-  border-radius: 5px;
-  display: inline-block;
-  color: inherit;
-  font: inherit;
-  font-size: smaller;
+.game-player-deaths {
+  color: white;
+  background-color: black;
 }
 
-  .police{
-   
-    font-size: 15px;
-    list-style: none;
-    color: blue;
-        
-  }
+.game-player-status-dc,
+.game-player-status-dd {
+  background: #660000 !important;
+}
 
-  .police .police{
-    font-size: 25px;
-  }
-  
-
-  .thief{
-    font-size: 15px;
-    list-style: none;
-    color: red;
-  }
-  .thief .thief {
-    font-size: 20px;
-  }
-   
-  .col_police{
- 
-  }
-  .col_grab{
-   
-  }
+.game-team-winner {
+  background-color: gold !important;
+}
