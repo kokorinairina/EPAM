@@ -10,14 +10,16 @@
     <link rel="stylesheet" href="/css/bootstrap-theme.css" type="text/css" />
 
     <!--  TODO: Закомментировать при начале работы с сервером -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-          <integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
 </head>
 <body>
 <!-- TODO: Task 0. Построить вёрстку приложения по макету
-          используя для сетки bootstrap -->
+          используя для сетки bootstrap --> 
     <div class="paenl mypanel">
-
+        <div id="game">
+            <div id="main">
+                <div id="gameCaption"></div>   
         <header class="navbar navbar-inverse">
             <p class="navbar-text">
                 123
@@ -28,19 +30,20 @@
         </header>
 
         <main>
-            <text class="text timer">Оставшееся время 00</text>
+            <div id="switchTimer"><span class='game-timer-ok'>00:00</span></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <ul class="list-group police">
-                            <li class="list-group-item police">Команда полицейских</li>
-                            <li class="list-group-item police_life">Жизни
-                                <span class="badge badge-primary badge-pill">0</span>
-                            </li>
-                            <li class="list-group-item police_money">Монеты
-                                <span class="badge badge-primary badge--pill">0</span>
-                            </li>
-                        </ul>
+                        <div id="team1">
+                            <div>
+                                <span id="team1Caption" class="teamCaption">Команда полицейских</span>
+                            </div>
+                            <div id="team1Stats">
+                                <div class="teamLives">Жизни: <span id="team1Lives">0</span></div>
+                                <div class="teamCoins">Монеты: <span id="team1Coins">0</span></div>
+                            </div>
+                            <div id="team1users"></div>
+                        </div>
                     </div>
 
                     <div class="col-md-4">
@@ -48,30 +51,29 @@
                      </div>
                     
                      <div class="col-md-4">
-                        <ul class="list-group thief">
-                            <li class="list-group-item thief">Команда воров</li>
-                            <li class="list-group-item thief_life">Жизни
-                                <span class="badge badge-primary badge-pill">0</span>
-                            </li>
-                            <li class="list-group-item thief_money">Монеты
-                                <span class="badge badge-primary badge--pill">0</span>
-                            </li>
-                        </ul>                        
+                        <div id="team2">
+                            <div>
+                                <span id="team2Caption" class="teamCaption">Команда воров</span>
+                            </div>
+                            <div id="team2Stats">
+                                <div class="teamLives">Жизни: <span id="team2Lives">0</span></div>
+                                <div class="teamCoins">Монеты: <span id="team2Coins">0</span></div>
+                            </div>
+                            <div id="team2users"></div>
+                        </div>                    
                      </div>
                 </div>
 
             </div>
         </main>
 
-        <footer>
-            <div class="btn-group" role="group">
-                <button class="btn btn-success" > К списку игр </button>
-                <button class="btn btn-success" > Начать игру </button>
-                <button class="btn btn-default" > Покинуть игру </button>
-                <button class="btn btn-default" > Прервать игру </button>
-            </div>
-        </footer>
-       
+        <div id="controls">
+            <button id="btnGameList" class="game-btn btn-warning">К списку игр</button>
+            <button id="btnStart" class="game-btn btn-success">Начать игру</button>
+            <button id="btnLeave" class="game-btn btn-danger">Покинуть игру</button>
+            <button id="btnCancel" class="game-btn btn-danger">Прервать игру</button>
+        </div>
+        <div id="console">
     </div>
 
         <div class="hidden">

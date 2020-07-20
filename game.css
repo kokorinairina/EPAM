@@ -40,12 +40,99 @@ body {
     padding: 2px;
     size: 100px;
   }
-  .timer{
+  .game-timer-ok{
     color: maroon;
     font-size: 25px;
-    margin-left: 40%;
+    margin-left: 45%;
   }
   
+  #team1, #team2 {
+    width: 200px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    font-size: smaller;
+    border: 1px solid;
+    padding: 2px;
+  }
+  #team1 {
+    float: left;
+  }
+  #team2 {
+    float: right;
+  }
+  #team1.police,
+  #team2.police {
+    border-color: #0099ff;
+  }
+  #team1.thief,
+  #team2.thief {
+    border-color: #FFCC00;
+  }
+
+  .game-team-police-caption,
+.game-team-thief-caption {
+  color: black;
+}
+.game-team-police-caption {
+  background-color: #0099ff;
+}
+.game-team-thief-caption {
+  background-color: #FFCC00;
+}
+#team1Lives, #team2Lives {
+  float: right;
+  color: black;
+  border: 1px solid;
+  border-radius: 2px;
+  background-color: red;
+}
+.teamLives, .teamCoins {
+  padding: 3px;
+}
+#team1Coins, #team2Coins {
+  float: right;
+  color: black;
+  border: 1px solid;
+  border-radius: 2px;
+  background-color: #FFA600;
+}
+.game-player {
+  color: black;
+  padding: 3px;
+}
+.game-player:nth-child(even) {
+  background: #454545;
+}
+.game-player:nth-child(odd) {
+  background: #5F5F5F;
+}
+
+.game-player-lives,
+.game-player-coins,
+.game-player-deaths {
+  border: 1px solid;
+  border-radius: 2px;
+}
+.game-player-lives {
+  color: black;
+  background-color: red;
+}
+.game-player-coins {
+  color: black;
+  background-color: #FFA600;
+}
+
+.game-btn {
+  border: solid 2px;
+  padding: 5px;
+  background-color: inherit;
+  border-radius: 5px;
+  display: inline-block;
+  color: inherit;
+  font: inherit;
+  font-size: smaller;
+}
+
   .police{
    
     font-size: 15px;
